@@ -15,7 +15,6 @@ C:\Users\heshy\.gemini\antigravity\scratch\SimpleCrudApp\Backend\bin\Debug\net9.
 C:\Users\heshy\.gemini\antigravity\scratch\SimpleCrudApp\Backend\bin\Debug\net9.0\Backend.dll
 C:\Users\heshy\.gemini\antigravity\scratch\SimpleCrudApp\Backend\bin\Debug\net9.0\Backend.pdb
 C:\Users\heshy\.gemini\antigravity\scratch\SimpleCrudApp\Backend\bin\Debug\net9.0\Humanizer.dll
-C:\Users\heshy\.gemini\antigravity\scratch\SimpleCrudApp\Backend\bin\Debug\net9.0\Microsoft.AspNetCore.OpenApi.dll
 C:\Users\heshy\.gemini\antigravity\scratch\SimpleCrudApp\Backend\bin\Debug\net9.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\heshy\.gemini\antigravity\scratch\SimpleCrudApp\Backend\bin\Debug\net9.0\Microsoft.CodeAnalysis.dll
 C:\Users\heshy\.gemini\antigravity\scratch\SimpleCrudApp\Backend\bin\Debug\net9.0\Microsoft.CodeAnalysis.CSharp.dll

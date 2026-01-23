@@ -2,28 +2,22 @@
   <h2>Simple CRUD App</h2>
 
   <div class="form-group">
-    <input [(ngModel)]="currentItem.name" placeholder="Name" class="form-control" />
+    <input [(ngModel)]="currentItem.name" placeholder="Item Name" class="form-control" />
     <input [(ngModel)]="currentItem.description" placeholder="Description" class="form-control" />
-    <button (click)="onSubmit()" class="btn-primary">{{ isEditing ? 'Update' : 'Add' }}</button>
+    <button (click)="onSubmit()" class="btn-primary">{{ isEditing ? 'Update Item' : 'Add Item' }}</button>
     <button *ngIf="isEditing" (click)="resetForm()" class="btn-secondary">Cancel</button>
   </div>
 
   <ul>
     <li *ngFor="let item of items">
-      <strong>{{ item.name }}</strong> - {{ item.description }}
-      <button (click)="editItem(item)">Edit</button>
-      <button (click)="deleteItem(item.id)">Delete</button>
+      <div class="item-content">
+        <span class="item-name">{{ item.name }}</span>
+        <span class="item-desc">{{ item.description }}</span>
+      </div>
+      <div class="actions">
+        <button (click)="editItem(item)" class="btn-edit">Edit</button>
+        <button (click)="deleteItem(item.id)" class="btn-delete">Delete</button>
+      </div>
     </li>
   </ul>
 </div>
-
-<style>
-  .container { max-width: 600px; margin: 20px auto; font-family: sans-serif; }
-  .form-group { margin-bottom: 20px; display: flex; gap: 10px; }
-  .form-control { padding: 8px; border: 1px solid #ccc; border-radius: 4px; }
-  .btn-primary { background: #007bff; color: white; border: none; padding: 8px 16px; cursor: pointer; }
-  .btn-secondary { background: #6c757d; color: white; border: none; padding: 8px 16px; cursor: pointer; }
-  ul { list-style: none; padding: 0; }
-  li { padding: 10px; border-bottom: 1px solid #eee; display: flex; align-items: center; gap: 10px; }
-  li button { margin-left: auto; cursor: pointer; }
-</style>
