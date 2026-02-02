@@ -8,7 +8,7 @@ import { Item } from '../models/item';
 })
 export class ItemService {
     private http = inject(HttpClient);
-    private apiUrl = 'http://localhost:5249/api/items'; // Check Port!
+    private apiUrl = 'http://localhost:2211/api/items';
 
     getItems(): Observable<Item[]> {
         return this.http.get<Item[]>(this.apiUrl);

@@ -14,10 +14,12 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAngular",
-        builder => builder.WithOrigins("http://localhost:4200")
+        policy => policy.WithOrigins("http://localhost:1122") // Updated port
                           .AllowAnyMethod()
                           .AllowAnyHeader());
 });
+
+builder.Services.AddAuthorization(); // Added Authorization service
 
 var app = builder.Build();
 
